@@ -16,7 +16,15 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body>
-        <Cabecalho />
+        <Cabecalho
+          titulo={"EXEMPLO DE PROPS E TYPES"}
+          msg={"Olá props!!"}
+          usuario={{
+            nome: "Ivan",
+            email: "ivan@email.com"
+          }}
+
+        />
         {children}
         <Rodape />
       </body>
